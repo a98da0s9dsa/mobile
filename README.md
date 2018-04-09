@@ -36,6 +36,7 @@ Go to the folder where you have this file and execute `chmod +x filename`, sou y
 # Notes
 
 Some Android devices have different folder names for the camera pictures. 
+
 Check yours and update the script if needed :)
 
 # Bonus
