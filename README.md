@@ -18,6 +18,11 @@ Create a file in your Linux system with the following content:
     cd "$MOBILE"/DCIM/
     exiftool -r -v0 -overwrite_original -all= -tagsFromFile @ -*date* -ext jpg .
     exiftool -r -v0 -overwrite_original -all= -tagsFromFile @ -*date* -ext mp4 .
+    
+    # THIS PART IS OPTIONAL, IT JUST RENAMES THE FILE TO THE FORMAT Year-Month-Day_counter.extension,
+    # SO INSTEAD OF IMG_20180701.JPG IT WILL RENAME TO 2018-07-01_01.JPG
+    
+    exiftool '-FileName<filemodifydate' -d %Y-%m-%d_%.2c.%%e .
 
 If you want to delete everything, including the date of when the pictures were taken, replace the last 2 lines for these ones:
 
