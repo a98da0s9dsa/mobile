@@ -23,13 +23,13 @@ If you want to delete everything, including the date of when the pictures were t
     exiftool -r -v0 -overwrite_original -all= -ext mp4 .
     
 Add more file extensions in case your mobile device uses different ones.
+Save the file and open your terminal.
+Go to the folder where you have this file and execute `chmod +x filename`, sou you can make it executable.
 
 # How to use the script
 
-1. Save the file and open your terminal.
-2. Go to the folder where you have this file and execute `chmod +x filename`, sou you can make it executable.
-3. Connect your Android device in your USB port and select the MTP File Transfer option in your notification area.
-4. Open your terminal, go to the folder where the file is and type `./filename` and press [Enter]
+1. Connect your Android device in your USB port and select the MTP File Transfer option in your notification area.
+2. Open your terminal, go to the folder where the file is and type `./filename` and press [Enter]
 
 # Notes
 
