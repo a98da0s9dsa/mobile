@@ -24,7 +24,7 @@ Create a file in your Linux system with the following content:
     
     exiftool '-FileName<filemodifydate' -d %Y-%m-%d_%.2c.%%e .
 
-If you want to delete everything, including the date of when the pictures were taken, replace the last 2 lines for these ones:
+If you want to delete everything, including the date of when the pictures were taken, replace the first 2 exiftool lines in this code for these ones:
 
     exiftool -r -v0 -overwrite_original -all= -ext jpg .
     exiftool -r -v0 -overwrite_original -all= -ext mp4 .
