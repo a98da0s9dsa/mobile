@@ -2,6 +2,8 @@
 
 This simple script opens your Android camera folder and remove metadata from pictures and videos. However it will preserve the date taken, so you can use softwares to organize your pictures by the date they happened.
 
+You'll need `exiftool` in your Linux. If you don't have it already, execute the command `sudo apt update && sudo apt -y install exiftool`
+
 Create a file in your Linux system with the following content:
 
     # GO TO MOBILE DIRECTORY
