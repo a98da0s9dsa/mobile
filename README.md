@@ -11,10 +11,9 @@ You'll need `exiftool` in your Linux. If you don't have it already, execute the 
 # How to use the script
 
 1. Connect your Android device in your USB port and select the MTP File Transfer option in your notification area.
-2. Open your terminal, go to the folder where the file is and type `./filename` and press [Enter]
+2. Open your terminal, go to the folder where the file is and type `./removeMetadata.sh` and press [Enter]
 
 # Notes
 
 Some Android devices have different folder names for the camera pictures. 
-
 Check yours and update the script if needed :)
