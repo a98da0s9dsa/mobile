@@ -13,10 +13,11 @@ cd "$MOBILE"/DCIM/ || exit
 exiftool -r -v0 -overwrite_original -all= -tagsFromFile @ -*date* -ext jpg .
 exiftool -r -v0 -overwrite_original -all= -tagsFromFile @ -*date* -ext mp4 .
 
-# THIS PART IS OPTIONAL, IT JUST RENAMES THE FILE TO THE FORMAT Year-Month-Day_counter.extension,
-# SO INSTEAD OF IMG_20180701.JPG IT WILL RENAME TO 2018-07-01_01.JPG, 2018-07-01_02.JPG, ETC.
+# This part is optional, it just renames the file to the format "Year-Month-Day_counter.extension",
+# so instead of "IMG_20180701.JPG", it will rename to "2018-07-01_01.JPG", "2018-07-01_02.JPG", etc.
+# Comment the below line if you do not want the renaming.
 
-# exiftool '-FileName<filemodifydate' -d %Y-%m-%d_%.2c.%%e .
+exiftool '-FileName<filemodifydate' -d %Y-%m-%d_%.2c.%%e .
 
 # =============================================================================================================
 
